@@ -24,5 +24,7 @@ class UserTest < ActiveSupport::TestCase
   end
 
   test "stripe trial" do
+    travel_to(VCR.current_cassette.originally_recorded_at || Time.current) do
+    end
   end
 end
